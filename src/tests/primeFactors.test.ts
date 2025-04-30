@@ -16,4 +16,10 @@ describe('Prime factors version 1 should', () => {
   it('calculate the prime factors for number 4', () => {
     expect(primeFactorsV1(4)).toEqual([2,2]);
   });
+  it('calculate the prime factors for number 60', () => {
+    expect(primeFactorsV1(60)).toEqual([2,2,3,5]);
+  });
+  it('calculate the prime factors for number 7', () => {
+    expect(primeFactorsV1(7)).toEqual([7]);
+  });
 });
