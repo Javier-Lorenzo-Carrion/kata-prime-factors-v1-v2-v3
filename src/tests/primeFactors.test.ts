@@ -7,4 +7,7 @@ describe('Prime factors version 1 should', () => {
   it('calculate the prime factors for number 1', () => {
     expect(primeFactorsV1(1)).toEqual([1]);
   });
+  it('calculate the prime factors for number 2', () => {
+    expect(primeFactorsV1(2)).toEqual([2]);
+  });
 });
