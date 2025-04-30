@@ -13,4 +13,7 @@ describe('Prime factors version 1 should', () => {
   it('calculate the prime factors for number 3', () => {
     expect(primeFactorsV1(3)).toEqual([3]);
   });
+  it('calculate the prime factors for number 4', () => {
+    expect(primeFactorsV1(4)).toEqual([2,2]);
+  });
 });

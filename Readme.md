@@ -32,4 +32,4 @@ Es decir, los factores primos de un número "x" son un conjunto de números (los
 
 Por tanto, si a la función entrase el número 9, ésta debe retornar un conjunto de números primos ordenados de menor a mayor que multiplicados entre sí dan como resultado 9. Obviamente el array resultante no puede contener el número pasado como parámetro a la función.
 
-
+El array devuelto puede contener número primos iguales en las cantidades que sean necesarias para que el resultado de su multiplicación arroje el numero que entró como parámetro a la función.

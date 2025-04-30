@@ -1,3 +1,27 @@
 export function primeFactorsV1(number: number): number[] {
-  return [number];
+
+  if(number <= 1) return [number];
+
+  let dividend: number = number;
+  let divisor: number = 2;
+  const primeFactors: number[] = [];
+
+  function isNotPrime(dividend: number): boolean {
+    for (let i: number = (dividend - 1); i > 0; i--) {
+      if (dividend % i == 0 && i > 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  do {
+    if (dividend % divisor == 0) {
+      primeFactors.push(divisor);
+      dividend = dividend / divisor;
+    } else {
+      divisor = divisor + 1;
+    }
+  } while (isNotPrime(dividend));
+  return primeFactors;
 }
