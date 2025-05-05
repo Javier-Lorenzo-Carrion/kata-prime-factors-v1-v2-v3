@@ -28,4 +28,7 @@ describe('Prime factors version 2 should', () => {
   it('calculate the prime factors for number 0', () => {
     expect(primeFactorsV2(0)).toEqual([0]);
   });
+  it('calculate the prime factors for number 1', () => {
+    expect(primeFactorsV2(1)).toEqual([1]);
+  });
 });

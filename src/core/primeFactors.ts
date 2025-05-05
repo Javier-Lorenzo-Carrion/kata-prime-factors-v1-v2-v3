@@ -18,5 +18,5 @@ export function primeFactorsV1(number: number): number[] {
 }
 
 export function primeFactorsV2(number: number): number[] {
-  return [0];
+  return [number];
 }
