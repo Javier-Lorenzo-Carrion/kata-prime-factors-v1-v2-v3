@@ -16,3 +16,7 @@ export function primeFactorsV1(number: number): number[] {
   } while (dividend > 1);
   return primeFactors;
 }
+
+export function primeFactorsV2(number: number): number[] {
+  return [0];
+}
