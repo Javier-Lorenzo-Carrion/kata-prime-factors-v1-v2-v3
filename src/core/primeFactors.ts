@@ -19,12 +19,12 @@ export function primeFactorsV1(number: number): number[] {
 
 export function primeFactorsV2(number: number): number[] {
   if (number <= 1) return [number];
-  function factorize(n: number, divisor: number = 2): number[] {
-    if (n <= 1) return [];
-    if (n % divisor === 0) {
-      return [divisor, ...factorize(n / divisor, divisor)];
+  function factorize(newNumber: number, divisor: number = 2): number[] {
+    if (newNumber <= 1) return [];
+    if (newNumber % divisor === 0) {
+      return [divisor, ...factorize(newNumber / divisor, divisor)];
     } else {
-      return factorize(n, divisor + 1);
+      return factorize(newNumber, divisor + 1);
     }
   }
   return factorize(number);
