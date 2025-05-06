@@ -40,4 +40,7 @@ describe('Prime factors version 2 should', () => {
   it('calculate the prime factors for number 4', () => {
     expect(primeFactorsV2(4)).toEqual([2,2]);
   });
+  it('calculate the prime factors for number 60', () => {
+    expect(primeFactorsV2(60)).toEqual([2,2,3,5]);
+  });
 });
